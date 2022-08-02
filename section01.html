@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section 01-about</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .c_b {
+            color: #0d6efd;
+        }
+
+        .container {
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .inner {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 100px 0;
+            letter-spacing: -0.025em;
+            font-size: 15px;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .about h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 15px auto;
+            background: #0d6efd;
+        }
+
+        .about>p {
+            margin: 0 0 50px 0;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about .container {
+            margin: 0 auto 100px auto;
+            justify-content: space-between;
+        }
+
+        .about .tit {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 0 0 50px 0;
+            line-height: 1.45;
+        }
+
+        .about .container p {
+            margin: 0 0 30px 0;
+            line-height: 1.45;
+        }
+
+        .about figure {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .about h3 {
+            position: relative;
+            font-size: 23px;
+            font-weight: 500;
+            padding: 0 0 0 10px;
+            margin: 0 0 30px 0;
+        }
+
+        .about h3::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 3px;
+            height: 20px;
+            background: #0d6efd;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #333;
+            border-spacing: 0;
+            border-collapse: collapse;
+            border-left: none;
+            border-right: none;
+            border-top: 3px solid #0d6efd;
+        }
+
+        table td {
+            padding: 15px 15px;
+            border-left: 1px solid #999;
+        }
+
+        table th {
+            padding: 15px 15px;
+            background: #f7f7f7;
+            font-weight: 400;
+        }
+
+        table td~td {
+            border-left: 1px solid #999;
+        }
+
+        table tr {
+            border-bottom: 1px solid #999;
+        }
+
+        .responsive_table {
+            width: 100%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="about">
+        <h2><span class="c_b">CEO's </span>GREETINGS</h2>
+        <p>Korea No.1 캐릭터, 카카오프렌즈</p>
+        <div class="container">
+            <div class="des">
+                <p class="tit">전국민의 감정을 대변하며 성장한 <span class="c_b">카카오프렌즈</span>는<br />
+                    <span class="c_b">글로벌 캐릭터</span>로 나아가고 있습니다.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut libero optio officiis,<br />
+                    dignissimos
+                    esse alias impedit maxime inventore incidunt consectetur id numquam<br /> iusto cumque,
+                    corrupti,
+                    provident voluptatem laboriosam mollitia blanditiis?</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse consectetur inventore<br /> sed
+                    perferendis,
+                    laboriosam vero, maiores perspiciatis obcaecati fugiat ex nam,<br /> reiciendis
+                    accusantium ipsum a.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit doloribus voluptate, nisi
+                    nihil harum quidem.</p>
+
+                <p>카카오프렌즈 일동</p>
+            </div>
+            <figure>
+                <img src="./img/DM_20220801165606_001.jpg" alt="">
+            </figure>
+        </div>
+
+        <div class="inner">
+            <h3>주요현황</h3>
+            <div class="responsive_table">
+                <table class="table">
+                    <tr>
+                        <th>주 소</th>
+                        <td>부산시 연제구 연제로21 연제힐스테이트 101동 304호</td>
+
+                    </tr>
+
+                    <tr>
+                        <th>전화번호</th>
+                        <td>010-7578-8546</td>
+
+
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
