@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section 03 - </title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/basic.css">
+
+    <style>
+        .business02 .container {
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .business02 .container>div {
+            flex: 1;
+        }
+
+        .business02 .left img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .business02 .right {
+            display: flex;
+            flex-direction: column;
+            border-top: 2px solid var(--mc);
+            padding: 40px 0 0 0;
+        }
+
+        .business02 .right h3 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+
+        .business02 .right p {
+            margin: 0 0 30px 0;
+        }
+
+        .business02 .right .bottom {
+            margin: auto 0 0 0;
+            background: var(--lc);
+            border-top: 1px solid var(--gc);
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .business02 .inner {
+            padding: 0 15px;
+        }
+
+        .business02 .inner h3 {
+            font-size: 27px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .business02 .inner h3::before {
+            content: "/";
+            color: var(--mc);
+            font-size: 18px;
+            font-weight: 900;
+            margin: 0 10px 0 0;
+            display: inline-block;
+            transform: translateY(-10px) rotate(20deg);
+        }
+
+        .business02 .inner ul {
+            padding: 20px 0;
+            border-top: 1px solid var(--dc);
+            border-bottom: 1px solid var(--dc);
+
+        }
+
+        .business02 .inner ul>li {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+        .business02 .inner ul>li::before {
+            content: attr(data-num);
+            display: inline-block;
+            padding: 5px;
+            color: var(--lc);
+            background: var(--dc);
+            border-radius: 13px;
+            margin: 0 10px 0 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="business02 basicSection">
+        <h2><span>OUR</span> BUSINESS</h2>
+        <p>Korea No.1 캐릭터, 카카오프렌즈</p>
+
+        <div class="container">
+            <div class="left">
+                <figure>
+                    <img src="./img/DM_20220801165606_007.jpg" alt="">
+                </figure>
+            </div>
+            <div class="right">
+                <h3>심플하지만 다 갖춘 jay테마</h3>
+                <p>카카오프렌즈는 글로벌 캐릭터로 나아가고 있습니다.</p>
+
+                <ul class="dotList">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+
+                <div class="bottom">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit, Optio.<br />
+                    sir sit amet consectetur.
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <h3>카카오프렌즈는 글로벌 캐릭터</h3>
+            <ul class="row">
+                <li data-num="01">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li data-num="02">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li data-num="03">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio?</li>
+                <li data-num="04">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
