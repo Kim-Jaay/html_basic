@@ -1,9 +1,7 @@
-import '../css/section01.css'
-
 const Section01 = () => {
     return (
-        <section className="about">
-            <h2><span className="c_b">CEO's </span>GREETINGS</h2>
+        <section className="about basicSection">
+            <h2><span className="t_b">CEO's </span>GREETINGS</h2>
             <p>Korea No.1 캐릭터, 카카오프렌즈</p>
             <div className="container">
                 <div className="des">
@@ -33,7 +31,7 @@ const Section01 = () => {
                 </figure>
             </div>
 
-            <div className="inner">
+            <div className="inner pd15">
                 <h3>주요현황</h3>
                 <div className="responsive_table">
                     <table className="table">
